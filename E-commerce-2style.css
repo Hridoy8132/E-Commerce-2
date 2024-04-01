@@ -146,6 +146,7 @@ nav {
   background-attachment: fixed;
   background-size: cover;
 }
+
 .banner {
   width: 100%;
   height: 100%;
@@ -197,7 +198,6 @@ main {
 }
 .actions__search input {
   padding: var(--padding);
-
   width: 15rem;
 }
 .actions__search button {
@@ -224,6 +224,8 @@ main {
   text-align: center;
   border-radius: var(--border-radius);
   z-index: 10;
+  
+  
 }
 .product__img {
   width: 100%;
@@ -243,6 +245,189 @@ main {
 .learn-more {
   color: green;
 }
+
+/* pagination starts   */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pagination__btn {
+  border-width: 1px 1px 1px 0;
+  border-style: solid;
+}
+.pagination__btn:first-child {
+  border-width: 1px 1px 1px 1px;
+  border-style: solid;
+}
+/* pagination ends   */
+
+/* prodcut details starts here  */
+.product__details-left {
+  flex: 1;
+}
+.product__details-left img {
+  height: 20rem;
+  width: 30rem;
+}
+.product__details-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+/* prodcut details ends here  */
+
+/* cart design starts */
+
+.cart {
+  padding: var(--padding);
+  gap: 1rem;
+}
+.cart .card {
+  margin-bottom: 1rem;
+}
+.cart__items {
+  flex: 1;
+}
+.cart__items-action {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cart__item input {
+  flex: 0.1;
+}
+.cart__item-img {
+  flex: 0.2;
+  width: 15rem;
+  height: 10rem;
+}
+.cart__item-description {
+  flex: 0.4;
+}
+.cart__item-shipping {
+  margin-top: 0.5rem;
+  color: red;
+}
+.cart__item-actions {
+  flex: 0.2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.cart__payment {
+  flex: 1;
+}
+.cart__payment-summary > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0;
+}
+.cart__payment-btn {
+  width: 100%;
+}
+.cart__payment-methods, h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.cart__payment-methods > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* cart design ends */
+
+/* Registration and login  start  */
+
+.register,
+.login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  min-height: 60vh;
+}
+.register .card,
+.login .card {
+  width: 45rem;
+}
+.form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.form-control label {
+  flex: 0.1;
+  text-align: left;
+}
+.form-control input,
+textarea {
+  flex: 0.9;
+  padding: var(--padding);
+  border: 1px solid;
+}
+.form-control textarea {
+  resize: none;
+  height: 12vh;
+}
+.form-btn-field {
+  border-radius: var(--border-radius);
+}
+.contact-btn {
+  width: 30%;
+}
+
+/* Registration and login ends  */
+
+/* profile starts here  */
+.profile {
+  flex-direction: column;
+  gap: 3rem;
+}
+.profile .card {
+  padding: var(--padding);
+  width: 30rem;
+  flex-direction: column;
+  gap: 1rem;
+}
+.profile__img {
+  width: 15vw;
+  border-radius: 55%;
+  border: 1px solid;
+  margin-top: 5px;
+}
+.profile__buttons button {
+  background-color: transparent;
+}
+/* profile ends here  */
+
+/* contact starts here  */
+.contact-section {
+  min-height: 52vh;
+}
+.contact-conatiner {
+  margin-top: 5rem;
+}
+.contact-address {
+  flex: 1;
+  gap: 2rem;
+  flex-direction: column;
+}
+.contact__map {
+  width: 80%;
+}
+/* contact ends here  */
+
+/* main ends here  */
 
 
 /* footer starts   */
@@ -271,7 +456,8 @@ main {
 
 
 @media (max-width: 992px) {
-  .flex-space-around {
+  .flex-space-around
+  {
     flex-direction: column;
     gap: 1rem;
     padding: 1rem 0;
@@ -291,10 +477,11 @@ main {
 }
 .products {
   grid-template-columns: repeat(2, minmax(0, 1fr));
+ /* 992 px screen ar jnno product 2 ta dakhabe  */
 }
 .cart__items,
 .cart__payment {
-  width: 90%;
+  width:90% ;
 }
 .form,
 .form-control {
@@ -322,7 +509,8 @@ textarea {
  }
  .products {
   grid-template-columns: repeat(1, minmax(0, 1fr));
- }
+  /* 768px screen ar jnno product 1 ta dakhabe  */
+}
 }
 
 @media  (max-width: 600px) {

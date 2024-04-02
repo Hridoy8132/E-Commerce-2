@@ -234,13 +234,14 @@ main {
   transition: var(--transition);
 }
 .product__img:hover {
-  filter: saturate(1);
+  filter: saturate(2);
 }
 .product__body {
   padding: var(--padding);
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  
 }
 .learn-more {
   color: green;
@@ -357,7 +358,7 @@ main {
 }
 .register .card,
 .login .card {
-  width: 45rem;
+  width: 55rem;
 }
 .form {
   flex: 1;
@@ -416,6 +417,7 @@ textarea {
 }
 .contact-conatiner {
   margin-top: 5rem;
+  
 }
 .contact-address {
   flex: 1;
@@ -424,6 +426,10 @@ textarea {
 }
 .contact__map {
   width: 80%;
+}
+
+.for-spacing{
+  margin-right: 7px;
 }
 /* contact ends here  */
 
@@ -450,6 +456,9 @@ textarea {
   border: none;
   padding: var(--padding);
   width: 20rem;
+  margin-left: 20px;
+  
+
   
 }
 /* footer ends  */
